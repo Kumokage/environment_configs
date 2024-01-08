@@ -9,9 +9,9 @@ return require('packer').startup(function(use)
 
     -- fuzzy finder
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.4',
-        -- or                            , branch = '0.1.x',
-        requires = { { 'nvim-lua/plenary.nvim' } }
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.5',
+        requires = { { 'nvim-lua/plenary.nvim' } },
     }
 
     -- Thema
@@ -75,6 +75,10 @@ return require('packer').startup(function(use)
             { 'williamboman/mason.nvim' },
             { 'williamboman/mason-lspconfig.nvim' },
 
+            -- Formaters as LSP
+            { 'jose-elias-alvarez/null-ls.nvim' },
+            { 'jay-babu/mason-null-ls.nvim' },
+
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' },
             { 'hrsh7th/cmp-buffer' },
@@ -89,9 +93,53 @@ return require('packer').startup(function(use)
         }
     }
 
+
     -- git status line
-    use { "lewis6991/gitsigns.nvim", config = function()
-        require('gitsigns').setup()
-    end
+    use { "lewis6991/gitsigns.nvim" }
+
+    -- markdown preview
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
+    -- Obsidian
+    use({
+        "epwalsh/obsidian.nvim",
+        tag = "*",
+        requires = { "nvim-lua/plenary.nvim", },
+    })
+
+
+    -- Database
+    use {
+        "tpope/vim-dadbod",
+        opt = true,
+        requires = {
+            "kristijanhusak/vim-dadbod-ui",
+            "kristijanhusak/vim-dadbod-completion",
+        },
+        cmd = {
+            "DBUIToggle",
+            "DBUI",
+            "DBUIAddConnection",
+            "DBUIFindBuffer",
+            "DBUIRenameBuffer",
+            "DBUILastQueryInfo"
+        },
+    }
+
+    -- Latex
+    use { 'lervag/vimtex' }
+
+    -- Test jupyter plugins
+    use { 'dccsillag/magma-nvim',
+        run = ':UpdateRemotePlugins',
+        requires = {
+            'kana/vim-textobj-user',
+            'kana/vim-textobj-line',
+            'GCBallesteros/vim-textobj-hydrogen',
+            'GCBallesteros/jupytext.vim',
+        }
     }
 end)
