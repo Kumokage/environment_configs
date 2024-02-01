@@ -15,7 +15,15 @@ return require('packer').startup(function(use)
     }
 
     -- Thema
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
+    use {
+        'ribru17/bamboo.nvim',
+        config = function()
+            require('bamboo').setup {
+                -- optional configuration here
+            }
+            require('bamboo').load()
+        end,
+    }
 
     -- vs-code like icons
     use("nvim-tree/nvim-web-devicons")
@@ -142,4 +150,28 @@ return require('packer').startup(function(use)
             'GCBallesteros/jupytext.vim',
         }
     }
+
+    -- PlantUML
+    use { 'weirongxu/plantuml-previewer.vim',
+        requires = {
+            'https://github.com/aklt/plantuml-syntax',
+            'tyru/open-browser.vim'
+        }
+    }
+
+    -- Pomodoro
+    use({
+        "epwalsh/pomo.nvim",
+        tag = "*", -- Recommended, use latest release instead of latest commit
+        requires = {
+            -- Optional, but highly recommended if you want to use the "Default" timer
+            "rcarriga/nvim-notify",
+        },
+        config = function()
+            require("pomo").setup({})
+        end,
+    })
+
+    -- Useless plugins
+    use 'eandrju/cellular-automaton.nvim'
 end)

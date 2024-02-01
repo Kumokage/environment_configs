@@ -2,7 +2,7 @@ require("obsidian").setup({
     workspaces = {
         {
             name = "personal",
-            path = "/Users/alexglushko/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zettelkasten",
+            path = "/home/aglushko2/Zettelkasten",
         }
     },
     daily_notes = {
@@ -21,5 +21,8 @@ require("obsidian").setup({
         -- A map for custom variables, the key should be the variable and the value a function
         substitutions = {},
     },
-    open_app_foreground = true,
+    open_app_foreground = false,
 })
+
+vim.keymap.set('n', '<leader>oq', ":ObsidianQuickSwitch<CR>")
+vim.opt.conceallevel = 1

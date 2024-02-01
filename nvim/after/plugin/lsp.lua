@@ -3,14 +3,7 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-    'csharp-language-server',
-    'css-lsp',
-    'docker-compose-language-server',
-    'dockerfile-language-server',
-    'html-lsp',
-    'lua-language-server',
     'pyright',
-    'pylint',
     'sqlls',
     'tsserver',
     'rust_analyzer',

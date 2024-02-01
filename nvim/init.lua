@@ -1,2 +1,3 @@
 require("kumokage")
-vim.cmd('colorscheme rose-pine')
+vim.cmd('colorscheme bamboo')
+
