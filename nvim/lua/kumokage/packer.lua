@@ -19,11 +19,12 @@ return require('packer').startup(function(use)
         'ribru17/bamboo.nvim',
         config = function()
             require('bamboo').setup {
-                -- optional configuration here
+                transparent = true
             }
             require('bamboo').load()
         end,
     }
+    use({ 'rose-pine/neovim', as = 'rose-pine' })
 
     -- vs-code like icons
     use("nvim-tree/nvim-web-devicons")

@@ -1,8 +1,14 @@
+if string.find(string.lower(vim.loop.os_uname().release), "wsl") then
+    obsidian_path = "/home/aglushko2/Zettelkasten"
+else 
+    obsidian_path = "/Users/alexglushko/Library/Mobile Documents/iCloud~md~obsidian/Documents/Zettelkasten"
+end
+
 require("obsidian").setup({
     workspaces = {
         {
             name = "personal",
-            path = "/home/aglushko2/Zettelkasten",
+            path = obsidian_path,
         }
     },
     daily_notes = {
