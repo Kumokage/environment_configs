@@ -15,6 +15,8 @@ if string.find(string.lower(vim.loop.os_uname().release), "wsl") then
         },
         cache_enable = 0,
     }
+elseif not string.find(string.lower(vim.loop.os_uname().sysname), "darwin") then
+    vim.g.python3_host_prog = '/usr/bin/python3'
 else
     vim.g.python3_host_prog = '/usr/local/opt/python@3.11/bin/python3.11'
 end
