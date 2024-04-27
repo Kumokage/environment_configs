@@ -70,16 +70,6 @@ null_ls.setup({
     end,
     sources = {
         null_ls.builtins.formatting.black,
-        null_ls.builtins.diagnostics.cspell.with({
-            diagnostics_postprocess = function(diagnostic)
-                diagnostic.severity = vim.diagnostic.severity.HINT
-            end,
-            diagnostic_config = {
-                virtual_text = false,
-                signs = false
-            }
-        }),
-        null_ls.builtins.code_actions.cspell
     }
 })
 
@@ -88,7 +78,6 @@ null_ls.setup({
 require('mason-null-ls').setup({
     ensure_installed = {
         'black',
-        'cspell'
     },
     automatic_installation = true,
 })

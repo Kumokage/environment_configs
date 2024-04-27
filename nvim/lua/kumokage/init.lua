@@ -25,3 +25,12 @@ vim.g.loaded_perl_provider = 0
 vim.g.magma_image_provider = "kitty"
 vim.g.jupytext_fmt = 'py'
 vim.g.jupytext_style = 'hydrogen'
+
+-- latex auto wrap
+local group = vim.api.nvim_create_augroup("Markdown Wrap Settings", { clear = true })
+vim.api.nvim_create_autocmd('BufEnter', {
+  pattern = {'*.tex'},
+  group = group,
+  command = 'setlocal wrap linebreak'
+})
+
