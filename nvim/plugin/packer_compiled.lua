@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/phmadmin/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/home/phmadmin/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/home/phmadmin/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/home/phmadmin/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/phmadmin/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
+local package_path_str = "/Users/alexglushko/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/Users/alexglushko/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/Users/alexglushko/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/Users/alexglushko/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/alexglushko/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -77,221 +77,220 @@ _G.packer_plugins = {
   ["Comment.nvim"] = {
     config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
   LuaSnip = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["bamboo.nvim"] = {
-    config = { "\27LJ\2\na\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\1\16transparent\2\nsetup\vbamboo\frequire\0" },
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/bamboo.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/bamboo.nvim",
     url = "https://github.com/ribru17/bamboo.nvim"
   },
   ["cellular-automaton.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
     url = "https://github.com/eandrju/cellular-automaton.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-nvim-lua"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
     url = "https://github.com/hrsh7th/cmp-nvim-lua"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/cmp-path",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["friendly-snippets"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   harpoon = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
   ["jupytext.vim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/jupytext.vim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/jupytext.vim",
     url = "https://github.com/GCBallesteros/jupytext.vim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["magma-nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/magma-nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/magma-nvim",
     url = "https://github.com/dccsillag/magma-nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason-null-ls.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/mason-null-ls.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/mason-null-ls.nvim",
     url = "https://github.com/jay-babu/mason-null-ls.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-notify"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-ts-autotag"] = {
     load_after = {},
     loaded = true,
     needs_bufread = false,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/opt/nvim-ts-autotag",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/opt/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["obsidian.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
     url = "https://github.com/epwalsh/obsidian.nvim"
   },
   ["open-browser.vim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/open-browser.vim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/open-browser.vim",
     url = "https://github.com/tyru/open-browser.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plantuml-previewer.vim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/plantuml-previewer.vim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/plantuml-previewer.vim",
     url = "https://github.com/weirongxu/plantuml-previewer.vim"
   },
   ["plantuml-syntax"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/plantuml-syntax",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/plantuml-syntax",
     url = "https://github.com/aklt/plantuml-syntax"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["pomo.nvim"] = {
     config = { "\27LJ\2\n6\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\tpomo\frequire\0" },
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/pomo.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/pomo.nvim",
     url = "https://github.com/epwalsh/pomo.nvim"
   },
   ["rose-pine"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/rose-pine",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["trouble.nvim"] = {
     config = { "\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0" },
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-dadbod"] = {
-    after = { "vim-dadbod-completion", "vim-dadbod-ui" },
+    after = { "vim-dadbod-ui", "vim-dadbod-completion" },
     commands = { "DBUIToggle", "DBUI", "DBUIAddConnection", "DBUIFindBuffer", "DBUIRenameBuffer", "DBUILastQueryInfo" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/opt/vim-dadbod",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/opt/vim-dadbod",
     url = "https://github.com/tpope/vim-dadbod"
   },
   ["vim-dadbod-completion"] = {
-    after_files = { "/home/phmadmin/.local/share/nvim/site/pack/packer/opt/vim-dadbod-completion/after/plugin/vim_dadbod_completion.lua", "/home/phmadmin/.local/share/nvim/site/pack/packer/opt/vim-dadbod-completion/after/plugin/vim_dadbod_completion.vim" },
+    after_files = { "/Users/alexglushko/.local/share/nvim/site/pack/packer/opt/vim-dadbod-completion/after/plugin/vim_dadbod_completion.lua", "/Users/alexglushko/.local/share/nvim/site/pack/packer/opt/vim-dadbod-completion/after/plugin/vim_dadbod_completion.vim" },
     load_after = {
       ["vim-dadbod"] = true
     },
     loaded = false,
     needs_bufread = false,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/opt/vim-dadbod-completion",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/opt/vim-dadbod-completion",
     url = "https://github.com/kristijanhusak/vim-dadbod-completion"
   },
   ["vim-dadbod-ui"] = {
@@ -300,47 +299,52 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/opt/vim-dadbod-ui",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/opt/vim-dadbod-ui",
     url = "https://github.com/kristijanhusak/vim-dadbod-ui"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-maximizer"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/vim-maximizer",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
   },
   ["vim-surround"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/vim-surround",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
   ["vim-textobj-hydrogen"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/vim-textobj-hydrogen",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/vim-textobj-hydrogen",
     url = "https://github.com/GCBallesteros/vim-textobj-hydrogen"
   },
   ["vim-textobj-line"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/vim-textobj-line",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/vim-textobj-line",
     url = "https://github.com/kana/vim-textobj-line"
   },
   ["vim-textobj-user"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/vim-textobj-user",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/vim-textobj-user",
     url = "https://github.com/kana/vim-textobj-user"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["vim-xkbswitch"] = {
+    loaded = true,
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/vim-xkbswitch",
+    url = "https://github.com/lyokha/vim-xkbswitch"
   },
   vimtex = {
     loaded = true,
-    path = "/home/phmadmin/.local/share/nvim/site/pack/packer/start/vimtex",
+    path = "/Users/alexglushko/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
   }
 }
@@ -354,10 +358,6 @@ time([[Config for Comment.nvim]], false)
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
--- Config for: bamboo.nvim
-time([[Config for bamboo.nvim]], true)
-try_loadstring("\27LJ\2\na\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\tload\1\0\1\16transparent\2\nsetup\vbamboo\frequire\0", "config", "bamboo.nvim")
-time([[Config for bamboo.nvim]], false)
 -- Config for: pomo.nvim
 time([[Config for pomo.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\tpomo\frequire\0", "config", "pomo.nvim")
@@ -370,27 +370,6 @@ time([[Sequenced loading]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'DBUIFindBuffer', function(cmdargs)
-          require('packer.load')({'vim-dadbod'}, { cmd = 'DBUIFindBuffer', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'vim-dadbod'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('DBUIFindBuffer ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'DBUIRenameBuffer', function(cmdargs)
-          require('packer.load')({'vim-dadbod'}, { cmd = 'DBUIRenameBuffer', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'vim-dadbod'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('DBUIRenameBuffer ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'DBUILastQueryInfo', function(cmdargs)
-          require('packer.load')({'vim-dadbod'}, { cmd = 'DBUILastQueryInfo', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'vim-dadbod'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('DBUILastQueryInfo ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'DBUIToggle', function(cmdargs)
           require('packer.load')({'vim-dadbod'}, { cmd = 'DBUIToggle', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -411,6 +390,27 @@ pcall(vim.api.nvim_create_user_command, 'DBUIAddConnection', function(cmdargs)
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'vim-dadbod'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('DBUIAddConnection ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'DBUIFindBuffer', function(cmdargs)
+          require('packer.load')({'vim-dadbod'}, { cmd = 'DBUIFindBuffer', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-dadbod'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('DBUIFindBuffer ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'DBUIRenameBuffer', function(cmdargs)
+          require('packer.load')({'vim-dadbod'}, { cmd = 'DBUIRenameBuffer', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-dadbod'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('DBUIRenameBuffer ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'DBUILastQueryInfo', function(cmdargs)
+          require('packer.load')({'vim-dadbod'}, { cmd = 'DBUILastQueryInfo', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-dadbod'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('DBUILastQueryInfo ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
 

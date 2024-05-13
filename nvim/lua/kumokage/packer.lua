@@ -15,15 +15,7 @@ return require('packer').startup(function(use)
     }
 
     -- Thema
-    use {
-        'ribru17/bamboo.nvim',
-        config = function()
-            require('bamboo').setup {
-                transparent = true
-            }
-            require('bamboo').load()
-        end,
-    }
+    use { 'ribru17/bamboo.nvim' }
     use({ 'rose-pine/neovim', as = 'rose-pine' })
 
     -- vs-code like icons
@@ -138,6 +130,15 @@ return require('packer').startup(function(use)
         },
     }
 
+    -- Test REST clients
+    -- use {
+    --     "rest-nvim/rest.nvim",
+    --     rocks = { "lua-curl", "nvim-nio", "mimetypes", "xml2lua" },
+    --     config = function()
+    --         require("rest-nvim").setup()
+    --     end,
+    -- }
+
     -- Latex
     use { 'lervag/vimtex' }
 
@@ -172,6 +173,8 @@ return require('packer').startup(function(use)
             require("pomo").setup({})
         end,
     })
+
+    use 'lyokha/vim-xkbswitch'
 
     -- Useless plugins
     use 'eandrju/cellular-automaton.nvim'
